@@ -1,4 +1,6 @@
-   <head>
+<!--In this page you are pulling data for logged in user and displaying their trips 
+When a user see all their trips they can edit their trip if they wish to by clicking on "Edit Trip button"-->  
+<head>
       <link rel="stylesheet" href="styles/style.css" media="all"/>
 	  <title>Your trips </title>
 	  <h1>Your trips</h1>   
@@ -7,15 +9,14 @@
    <body>
    		<!--Header Wrapper Starts-->
 		<div id="head_wrap">
-		<!--<img src="images\PVAMU1.jpg" width = '80%' alt="PVAMU Logo"> -->
 		</div>
 		<!--Header Wrapper ends-->
-
+<!-- First make the connection to database -->
 <?php
    include("session.php");
    
    $error = "";   
-   $con = mysqli_connect("localhost","root","","car") or die("Connection was not established");
+   $con = mysqli_connect("localhost","root","","rideShare") or die("Connection was not established");
 if(isset($_POST['btnjoin'])){
 			$f=($_POST['txtfrom']);
 			$t=($_POST['txtto']);
@@ -28,6 +29,8 @@ if(isset($_POST['btnjoin'])){
 			
 			}
 	mysqli_close($con);?>
+	   
+	   <!--After making the connection if user choses take to edit trip page -->
 		<h2><a href = "edit_trip.php">Edit trip</a></h2>
 	</body>
 	<div id = "tooplate_footer">
