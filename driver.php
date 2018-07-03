@@ -30,10 +30,11 @@
    <head>
    <link rel="stylesheet" href="styles/style.css" media="all"/>
       <title>Registration Page</title>
+	  <h1> Registration</h1>
+	  <div id="head_wrap"></div></br>	    
    </head>
+   
       <div align = "center">
-            <h1> Registration</h1>
-				              
                <form action = "" method = "post">
                   <label>Student ID  :</label>  <input type = "text" name = "studentid" class = "box"/><br /><br />
 				  <label>First Name  :</label>  <input type = "text" name = "firstname" class = "box"/><br /><br />
