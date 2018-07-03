@@ -30,34 +30,10 @@
    <head>
    <link rel="stylesheet" href="styles/style.css" media="all"/>
       <title>Registration Page</title>
-      
-      <style type = "text/css">
-         body {
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:14px;
-         }
-         
-         label {
-            font-weight:bold;
-            width:100px;
-            font-size:14px;
-         }
-         
-         .box {
-            border:#666666 solid 1px;
-         }
-      </style>
-      
    </head>
-   
-   <body bgcolor = "#FFFFFF">
-	
       <div align = "center">
-         <div style = "width:400px; border: solid 1px #333333; " align = "left">
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>New User Registration</b></div>
-				
-            <div style = "margin:30px">
-               
+            <h1> Registration</h1>
+				              
                <form action = "" method = "post">
                   <label>Student ID  :</label>  <input type = "text" name = "studentid" class = "box"/><br /><br />
 				  <label>First Name  :</label>  <input type = "text" name = "firstname" class = "box"/><br /><br />
@@ -71,11 +47,7 @@
                </form>
                
                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-					
-            </div>
-				
-         </div>
-			
+		
       </div>
 
    </body>
