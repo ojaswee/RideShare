@@ -10,7 +10,7 @@ include('session.php');
 
 include("includes/functions.php");
 
-$con = mysqli_connect("localhost","root","","car") or die("Connection was not established");
+$con = mysqli_connect("localhost","root","","rideshare") or die("Connection was not established");
 			$select = "SELECT trip.origin,trip.destination, student.email, student.phone,trip.tripdate
 			FROM student,passenger , trip WHERE passenger.f = trip.origin and passenger.t=trip.destination 
 			and passenger.d=trip.tripdate and student.username=passenger.username and trip.username='$login_session'";

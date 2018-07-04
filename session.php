@@ -3,7 +3,6 @@ logging in activate remove the comments
 For testing purposes I am skiping the login page-->
 
 <?php
-/*
    include('config.php');
    session_start();
    
@@ -18,5 +17,4 @@ For testing purposes I am skiping the login page-->
    if(!isset($_SESSION['login_user'])){
       header("location:login.php");
    }
-   */
 ?>

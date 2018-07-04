@@ -3,7 +3,7 @@
 /*include("includes/functions.php");*/
 include('session.php');
 
-/*share(); */
+share(); 
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +17,10 @@ include('session.php');
 		<div id="head_wrap"></div></br>
            <!-- Styles -->
 
-        <!-- Bootstrap -->
+        <!-- Bootstrap helps to control the length of dropdown-->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- Forms -->
-        <link href="css/jquery.idealforms.css" rel="stylesheet">
-        <!-- Select  -->
-        <link href="css/jquery.idealselect.css" rel="stylesheet">
+        <!-- Select  >
+        <link href="css/jquery.idealselect.css" rel="stylesheet"-->
         <!-- Slicknav  -->
         <link href="css/slicknav.css" rel="stylesheet">
         <!-- Main style -->

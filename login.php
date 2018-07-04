@@ -1,6 +1,11 @@
+<!--  
+This page is desiged to log you in the Rideshare page
+-->
+
 <?php
-   include("config.php");
+
    session_start();
+   include("config.php");
    $error = "";   
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
@@ -29,35 +34,26 @@
    }
 ?>
 <html>
-   
    <head>
    <link rel="stylesheet" href="styles/style.css" media="all"/>
-      <title>Login Page</title> 
-	  <h1>Please login</h1>
-	<div id="head_wrap">
-		</div>	  
+      <title>Login Page</title>  
    </head>
    
    <body >
-   </br>
-      <div align = "center">
-         <div style = "width:300px; border: solid 1px #333333; " align = "left">
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
-				
-            <div style = "margin:30px">
-               
-               <form action = "" method = "post">
+   	  <h1>Please login</h1>
+		<div id="head_wrap">
+		</div>	
+		</br>
+      <div align = "center">              
+               <form action = "login.php" method = "post">
                   <label>UserName  :</label><input type = "text" name = "username" class = "box"/><br /><br />
                   <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
-                  <input type = "submit" value = " Login "/> <a href="registration.php">New User Register</a><br /> 
+                  <input type = "submit" value = " Login "/> 
+				  <a href="registration.php">New User Register</a><br /> 
                </form>
                
-               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
-					
-            </div>
-				
-         </div>
-			
+               <!--div style = "font-size:11px; color:#cc0000; margin-top:10px"--><?php echo $error; ?>
+			   <!--/div-->		
       </div>
 
    </body>

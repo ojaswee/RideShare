@@ -12,10 +12,12 @@ For testing purposes I am skiping the login for now -->
       <link rel="stylesheet" href="styles/style.css" media="all"/>
 	     
       <title>Welcome </title>
+
    </head>
    
    <body>
-      <h1>Welcome <?php echo $login_session; ?></h1> 
+	  <h1>Welcome <?php echo $login_session; ?></h1> 
+	  <div id="head_wrap"></div></br>
 	  <h2><a href = "availablerides.php">Available Rides</a></h2>
 	  <h2><a href = "share.php">Share a new ride</a></h2>
 	  <h2><a href = "request.php">Requests</a></h2>

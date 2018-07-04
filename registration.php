@@ -15,7 +15,6 @@
 		<div id="head_wrap">
 		</div>
 		<!--Header Wrapper ends-->
-		</br>
 		<div align = "center">
        
                 <form action = "" method = "post">

@@ -1,6 +1,6 @@
 <?php 
 include("session.php");
-$con = mysqli_connect("localhost","root","","car") or die("Connection was not established");
+$con = mysqli_connect("localhost","root","","rideshare") or die("Connection was not established");
 ?>
 <!DOCTYPE html> 
 <html>
